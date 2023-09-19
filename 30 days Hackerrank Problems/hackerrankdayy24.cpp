@@ -1,0 +1,101 @@
+#include <cstddef>
+#include <cmath>
+#include <cstdio>
+#include <vector>
+#include <iostream>
+#include <algorithm>
+using namespace std;
+class Node
+{
+    public:
+        int data;
+        Node *next;
+        Node(int d){
+            data=d;
+            next=NULL;
+        }
+};
+class Solution{
+    public:
+
+          Node* removeDuplicates(Node *head)
+          {
+            //Write your code here
+            if(head->next==NULL)
+            {
+                return head;
+            }
+            Node*c=head;
+            Node* d= head->next;
+            Node* temp;
+
+
+            while (c->next!=NULL)
+            {
+                if(c->data==d->data)
+                {
+                    temp=d->next;
+                    d->next=NULL;
+                    d=temp;
+                    c->next=d;
+                }
+                else
+                {
+                    c=d;
+                }
+            }
+            return head;
+
+          }
+          Node* insert(Node *head,int data)
+          {
+               Node* p=new Node(data);
+               if(head==NULL){
+                   head=p;
+
+               }
+               else if(head->next==NULL){
+                   head->next=p;
+
+               }
+               else{
+                   Node *start=head;
+                   while(start->next!=NULL){
+                       start=start->next;
+                   }
+                   start->next=p;
+
+               }
+                    return head;
+
+
+          }
+          void display(Node *head)
+          {
+                  Node *start=head;
+                    while(start)
+                    {
+                        cout<<start->data<<" ";
+                        start=start->next;
+                    }
+           }
+};
+
+int main()
+{
+	Node* head=NULL;
+  	Solution mylist;
+    int T,data;
+    cin>>T;
+    while(T-->0){
+        cin>>data;
+        head=mylist.insert(head,data);
+    }
+    cout<< "============="<< endl;
+    head=mylist.removeDuplicates(head);
+    cout<< "abcde"<< endl;
+
+
+	mylist.display(head);
+
+}
