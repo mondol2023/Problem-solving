@@ -1,0 +1,11 @@
+.card-image {
+    display: none;
+}
+
+.card.flipped .card-image {
+    display: block;
+}
+
+.card.flipped .outline-image {
+    display: none;
+}

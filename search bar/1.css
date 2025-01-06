@@ -1,0 +1,40 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.con {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 10px;
+    border: 1px solid #440c0c;
+    border-radius: 5px;
+    background-color: #35cc17;
+}
+
+#searchbar {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #4d0d77;
+    border-radius: 4px;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li.animal {
+    padding: 8px;
+    border-bottom: 1px solid #cf1782;
+}
+
+li.animal:last-child {
+    border-bottom: none;
+}
+
+li.animal:hover {
+    background-color: rgb(160, 160, 218);
+}

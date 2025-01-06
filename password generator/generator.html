@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password generator</title>
+    <link rel="stylesheet" href="generator.css">
+</head>
+<body>
+    <header>
+        <nav class="Navbar">
+            <div class="logo">
+                <a href="/">
+                    <img src="https://via.placeholder.com/150" alt="Placeholder Image">
+                </a>
+            </div>
+            <div class="hamberger">
+                <span class="line"></span>
+                <span class="line"></span>
+                <span class="line"></span>
+            </div>
+            <div class="Navbar-hide">
+                <a href="home.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="contract.html">Contract</a>
+                <a href="donate.html">Donate</a>
+            </div>
+        </nav>
+    </header>
+    <div class="container">
+        <h2>Generate your Password</h2>
+        <input id="pass" type="text" name="" placeholder="Password" readonly>
+        <div class="btns">
+            <div class="btn" onclick="genPassword()">Generate</div>
+            <a class="btn">copy</a>
+        </div>    
+    </div>
+    <script src="generator.js"></script>
+</body>
+</html>

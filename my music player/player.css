@@ -1,0 +1,31 @@
+.player{
+    width: 500px;
+    background-color: #e99e9e;
+    padding: 20px;
+    border: 1px solid #023353;
+    border-radius: 5px;
+}
+
+.controls{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#playPause, #stop{
+    background-color: #4CAF50;
+    color: rgb(10, 2, 29);
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#playPause:hover, #stop:hover{
+    background-color: #45a049;
+}
+
+#progress{
+    width: 100%;
+    margin: 10px 0;
+}
